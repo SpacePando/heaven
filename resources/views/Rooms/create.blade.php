@@ -21,6 +21,7 @@
       <input type="checkbox" name="Needs[]" value="Armless">Armless<br />
       <input type="checkbox" name="Needs[]" value="Retard">Retard<br />
       <input type="checkbox" name="Needs[]" value="2Kids">2 Kids<br />
+      <input type="checkbox" name="Needs[]" value="None">None<br />
     </fieldset>
     <input type="submit" value="Book Room">
   </form>

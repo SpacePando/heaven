@@ -16,13 +16,19 @@ Route::get('/', function () {
 });
 
 // pizza routes
-Route::get('/pizzas', 'App\Http\Controllers\PizzaController@index')->name('Book.index')->middleware('auth');
-Route::get('/pizzas/create', 'App\Http\Controllers\PizzaController@create')->name('Book.create');
+Route::middleware(['auth', 'is_admin'])->group(function (){
+    Route::get('/pizzas', 'App\Http\Controllers\PizzaController@index')->name('Book.index')->middleware('auth');
+});
+Route::get('/pizzas/create', 'App\Http\Controllers\PizzaController@create')->name('Book.create');  
 Route::post('/pizzas', 'App\Http\Controllers\PizzaController@store')->name('Book.store');
 Route::get('/pizzas/{id}', 'App\Http\Controllers\PizzaController@show')->name('Book.show')->middleware('auth');
 Route::delete('/pizzas/{id}', 'App\Http\Controllers\PizzaController@destroy')->name('Book.destroy')->middleware('auth');
+Route::get('/about', 'App\Http\Controllers\PizzaController@about')->name('Book.about');
 
-Auth::routes();
+
+Auth::routes(
+  //'pizzas' => false]
+);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/check/role',[App\Http\Controllers\UserController::class,'checkRole'])->middleware('roleType');

@@ -25,9 +25,8 @@
 
         <div class="links">
             <a href="{{ route('Book.create')}}">Book a room</a>
-            <a href="/pizzas">lets see</a>
-            <a href="https://blog.laravel.com">about</a>
-            <a href="https://github.com/laravel/laravel">GitHub</a>
+            <a href="{{ route('Book.about')}}">About</a>
+            <a href="https://github.com/SpacePando/heaven">GitHub</a>
         </div>
     </div>
 </div>

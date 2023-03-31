@@ -56,6 +56,10 @@ class PizzaController extends Controller
 
     return redirect('/pizzas');
   }
+
+  public function about(){
+    return view('about');
+  }
 }
 
 

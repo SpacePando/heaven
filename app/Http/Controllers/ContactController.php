@@ -4,7 +4,7 @@ Namespace App\Http\Controllers;
 use App\Notifications\ContactFormMessage;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ContactFormRequest;
-use App\Recipient;
+use App\Models\Recipient;
 Class ContactController extends Controller
 {
  public function show()
