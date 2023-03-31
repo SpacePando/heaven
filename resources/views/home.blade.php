@@ -15,7 +15,9 @@
                     @endif
 
                     {{ __('You are logged in!') }}
-                    <p><a href="/pizzas">view all bookings</a></p>
+                    <p><a href="{{ route('Book.index')}}">view all bookings</a></p>
+                       <a href="{{ route('Book.create')}}">Book a room</a>
+                    
                 </div>
             </div>
         </div>

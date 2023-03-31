@@ -56,7 +56,7 @@ footer{
   text-transform: uppercase;
   border-bottom: 2px solid;
   padding: 12px 0;
-  color: #5e2195;
+  color: #1f0dc3;
 }
 
 .wrapper{
@@ -89,7 +89,7 @@ footer{
   }
 
   input[type=submit]{
-    background: #5e2195;
+    background: #1f0dc3;
     padding: 8px 20px;
     color: #fff;
     border: 0;
@@ -112,7 +112,7 @@ footer{
     font-weight: bold;
   }
   button{
-    background: #5e2195;
+    background: #1f0dc3;
     padding: 8px 20px;
     color: #fff;
     border: 0;
@@ -123,7 +123,7 @@ a.back{
   display: block;
   text-align: center;
   margin-top: 30px;
-  color: #5e2195;
+  color: #1f0dc3;
   margin-bottom: 20px;
 }
 
@@ -153,6 +153,13 @@ a.back{
   }
 }
 
-    img{
-      max-width: 50%;
-    }
+img{
+  max-width: 50%;
+}
+
+.link-item{
+  a{
+    color: #777;
+    text-decoration: none !important;
+  }
+}

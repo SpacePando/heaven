@@ -16,6 +16,17 @@ return new class extends Migration
             $table->timestamps();
             $table->string('type');
             $table->string('name');
+            $table->string('LastName');
+            $table->date('ArivalDate');
+            $table->date('DepartureDate');
+            $table->integer('NumAdults');
+            $table->integer('NumChild');
+            $table->string('Email')->unique();
+            $table->integer('Postcode');
+            $table->string('City');
+            $table->string('Country');
+            $table->string('Street');
+            $table->integer('HouseNo');
             $table->json('Needs');
         });
     }

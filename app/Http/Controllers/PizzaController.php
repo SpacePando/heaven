@@ -42,6 +42,17 @@ class PizzaController extends Controller
 
     $room->name = request('name');
     $room->type = request('type');
+    $room->LastName = request('LastName');
+    $room->ArivalDate = request('ArivalDate');
+    $room->DepartureDate = request('DepartureDate');
+    $room->NumAdults = request('NumAdults');
+    $room->NumChild = request('NumChild');
+    $room->Email = request('Email');
+    $room->Postcode = request('Postcode');
+    $room->City = request('City');
+    $room->Country = request('Country');
+    $room->Street = request('Street');
+    $room->HouseNo = request('HouseNo');
     $room->Needs = request('Needs');
 
     
@@ -54,7 +65,7 @@ class PizzaController extends Controller
     $room = room::findOrFail($id);
     $room->delete();
 
-    return redirect('/pizzas');
+    return redirect('Book.index');
   }
 
   public function about(){

@@ -24,7 +24,6 @@
         <p class="mssg">{{ session('mssg') }}</p>
 
         <div class="links">
-            <a href="{{ route('Book.create')}}">Book a room</a>
             <a href="{{ route('Book.about')}}">About</a>
             <a href="https://github.com/SpacePando/heaven">GitHub</a>
         </div>

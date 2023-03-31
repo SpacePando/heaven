@@ -21,8 +21,5 @@
 
       @yield('content')
 
-      <footer>
-        <p>Copyright 2023 Heavenly Suites</p>
-        <a href="/" class="back">back to HomePage</a>
-      </footer>
+
     </body>

@@ -1,8 +1,9 @@
 <?php
+namespace App\Models;
 
-namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Model;
+
 class Recipient extends Model
 {
   use Notifiable;
