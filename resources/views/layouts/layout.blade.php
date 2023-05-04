@@ -14,7 +14,7 @@
 
         <link rel="shortcut icon" href="{{ asset('img/logoICN.png') }}">
 
-        @vite(['ressources/sass/app.scss', 'resources/sass/main.scss'])
+        @vite(['resources/sass/app.scss', 'resources/sass/main.scss'])
         
     </head>
     <body>

@@ -19,7 +19,7 @@
     <label for="NumAdults">Number of Adults:</label>
     <input type="number" name="NumAdults" id="NumAdults" required>
 
-    <label for="NumChild">Number of Adults:</label>
+    <label for="NumChild">Number of Childs:</label>
     <input type="number" name="NumChild" id="NumChild" required>
 
     <label for="Email">Your email:</label>
