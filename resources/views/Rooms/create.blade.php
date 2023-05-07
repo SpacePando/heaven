@@ -3,7 +3,7 @@
 @section('content')
 <div class="wrapper create-pizza">
   <h1>Book a Room<h1>
-  <form action="/pizzas" method="POST">
+  <form action="/rooms" method="POST">
     @csrf
     <label for="name">name:</label>
     <input type="text" name="name" id="name" required>
