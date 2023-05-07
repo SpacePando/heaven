@@ -19,9 +19,9 @@ Route::get('/', function () {
 Route::middleware(['auth', 'is_admin'])->group(function (){
     Route::get('/pizzas', 'App\Http\Controllers\PizzaController@index')->name('Book.index')->middleware('auth');
 });
-Route::get('/pizzas/create', 'App\Http\Controllers\PizzaController@create')->name('Book.create');  
-Route::post('/pizzas', 'App\Http\Controllers\PizzaController@store')->name('Book.store');
-Route::get('/pizzas/{id}', 'App\Http\Controllers\PizzaController@show')->name('Book.show')->middleware('auth');
+Route::get('/rooms/create', 'App\Http\Controllers\PizzaController@create')->name('Book.create');  
+Route::post('/rooms', 'App\Http\Controllers\PizzaController@store')->name('Book.store');
+Route::get('/rooms/{id}', 'App\Http\Controllers\PizzaController@show')->name('Book.show')->middleware('auth');
 Route::delete('/pizzas/{id}', 'App\Http\Controllers\PizzaController@destroy')->name('Book.destroy')->middleware('auth');
 Route::get('/about', 'App\Http\Controllers\PizzaController@about')->name('Book.about');
 
