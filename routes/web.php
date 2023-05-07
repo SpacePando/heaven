@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 // pizza routes
 Route::middleware(['auth', 'is_admin'])->group(function (){
-    Route::get('/pizzas', 'App\Http\Controllers\PizzaController@index')->name('Book.index')->middleware('auth');
+    Route::get('/Rooms', 'App\Http\Controllers\PizzaController@index')->name('Book.index')->middleware('auth');
 });
 Route::get('/rooms/create', 'App\Http\Controllers\PizzaController@create')->name('Book.create');  
 Route::post('/rooms', 'App\Http\Controllers\PizzaController@store')->name('Book.store');
