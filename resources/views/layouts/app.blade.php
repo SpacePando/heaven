@@ -22,10 +22,10 @@
             margin-bottom: 200px;
             justify-content: center;
         }
-        /* .full-height {
+        .full-height {
             height: 100vh;
-        } */
-        /* .flex-center {
+        }
+        .flex-center {
             align-items: center;
             display: flex;
             justify-content: center;
@@ -37,7 +37,7 @@
             position: absolute;
             right: 10px;
             top: 18px;
-        } */
+        }
         .content {
             text-align: center;
         }
