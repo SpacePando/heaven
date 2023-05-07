@@ -11,10 +11,10 @@ class PizzaController extends Controller
 
   public function index() {
 
-     $pizzas = Room::latest()->get();      
+     $rooms = Room::latest()->get();      
 
     return view('Rooms.index', [
-      'pizzas' => $pizzas,
+      'rooms' => $rooms,
     ]);
   }
 
