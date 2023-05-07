@@ -5,39 +5,39 @@
   <h1>Book a Room<h1>
   <form action="/pizzas" method="POST">
     @csrf
-    <label for="name">Your name:</label>
+    <label for="name">name:</label>
     <input type="text" name="name" id="name" required>
-    <label for="LastName">Your Last name:</label>
+    <label for="LastName">Last name:</label>
     <input type="text" name="LastName" id="LastName" required>
 
-    <label for="ArivalDate">Arival Date:</label>
+    <label for="ArivalDate">Arrival Date:</label>
     <input type="Date" name="ArivalDate" id="ArivalDate" required>
     
-    <label for="DepartureDate">Arival Date:</label>
+    <label for="DepartureDate">Departure Date:</label>
     <input type="Date" name="DepartureDate" id="DepartureDate" required>
 
     <label for="NumAdults">Number of Adults:</label>
     <input type="number" name="NumAdults" id="NumAdults" required>
 
-    <label for="NumChild">Number of Childs:</label>
+    <label for="NumChild">Number of Children:</label>
     <input type="number" name="NumChild" id="NumChild" required>
 
-    <label for="Email">Your email:</label>
+    <label for="Email">email:</label>
     <input type="email" name="Email" id="Email" required>
 
-    <label for="Postcode">Your Postcode:</label>
+    <label for="Postcode">Postcode:</label>
     <input type="number" name="Postcode" id="Postcode" required>
     
-    <label for="City">Your City:</label>
+    <label for="City">City:</label>
     <input type="text" name="City" id="City" required>
     
-    <label for="Country">Your Coutry:</label>
+    <label for="Country">Country:</label>
     <input type="text" name="Country" id="Country" required>
     
-    <label for="Street">Your Streetname:</label>
+    <label for="Street">Streetname:</label>
     <input type="text" name="Street" id="Street" required>
     
-    <label for="HouseNo">Your House Number:</label>
+    <label for="HouseNo">House Number:</label>
     <input type="number" name="HouseNo" id="HouseNo" required>
     
     <label for="type">type of Room:</label>
