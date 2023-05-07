@@ -12,12 +12,9 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet">
+    <link href="../public/css/main.css" rel="stylesheet">
+    <link href="../public/css/app.css" rel="stylesheet">
     <link rel="shortcut icon" href="{{ asset('img/logoICN.png') }}">
-
-
-    <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/sass/main.scss', 'resources/js/app.js'])
 </head>
 <body>
     <div id="app">
