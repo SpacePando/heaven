@@ -6,7 +6,7 @@
   @foreach($rooms as $room)
   <div class="link-item">
   <a href="{{ route('Book.show', $room->id) }}" >
-  <div class="room-item">
+  <div class="room-item" >
       <img src="/img/logo.png" alt="Logo">
       <h4>{{ $room->name }}</h4>
     </div>

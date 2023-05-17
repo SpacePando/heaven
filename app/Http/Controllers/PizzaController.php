@@ -60,7 +60,7 @@ class PizzaController extends Controller
     $room = room::findOrFail($id);
     $room->delete();
 
-    return redirect('Book.index');
+    return redirect('home');
   }
 
   public function about(){

@@ -1,11 +1,59 @@
 @extends('layouts.app')
 
 @section('content')
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+    </svg>
+</button>
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="texttitle">
-                <h1>De Heavenly suites op A wondering</h1>
+    <div class="about-section">
+        <h1>About Us</h1>
+        <p>where a wonderfull hotel</p>
+    </div>
+    
+    </br>
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row flex">
+        <div class="column">
+            <div class="card">
+                <img src="{{ asset('img/logoICN.png') }}" alt="mats" style="width:100%">
+                <div class="container">
+                    <h2>Sooi van haudt</h2>
+                    <p class="title">CEO & Founder</p>
+                    <p>i like tutel</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="{{ asset('img/logoICN.png') }}" alt="Mats" style="width:100%">
+                <div class="container">
+                    <h2>Mats Praiss</h2>
+                    <p class="title">Residend Dwarf</p>
+                    <p>Dwarf</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="{{ asset('img/logoICN.png') }}" alt="Mats" style="width:100%">
+                <div class="container">
+                    <h2>Noah Verstraeten</h2>
+                    <p class="title">Computer NERD</p>
+                    <p>Computer</p>
+                </div>
+            </div>
+        </div>
+        <!-- <section class="logoparallax">
+            <img src="{{ asset('img/logoICN.png') }}" alt="cloud" id="logoparallax1">
+            <img src="{{ asset('img/logoICN.png') }}" alt="cloud" id="logoparallax2">
+            <img src="{{ asset('img/logoICN.png') }}" alt="cloud" id="logoparallax3">
+        </section> -->
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="texttitle">
+                <h1 >De Heavenly suites op A wondering</h1>
                 </br>
                 <p>A wondering is een nieuw pretpark aan de Ring van Antwerpen. Dit pretpark zal in 2030 openen, precies 100 jaar na de Antwerpse Expo. Hier zullen de Antwerpse mythes en legendes tot leven worden gebracht in de vorm van attracties, restaurants, ervaringen en hotels. A wondering is er om te vieren wat er allemaal gebeurd is met de Ring en wat er nog gaat gebeuren in de toekomst. Het is gevuld met allemaal wonderbaarlijke attracties. Bij de opening van het pretpark A Wondering opent een nieuw hotel van VH ook zijn deuren.</p>
                                 
@@ -19,14 +67,32 @@
                 <p>A wondering opent zijn deuren op 1/01/2030 en dan opent De Heavenly Suites zijn deuren ook. We kijken er naat uit om te zien wat er allemaal zal gebeuren.
                 </p>
 
-            <div class="flex">
-                <video src="vid/teaser.mp4" controls class="video"></video>
-                <video src="vid/ivid.mp4" controls class="video"></video>
-                <video src="vid/trail.mp4" controls class="video"></video>
-            </div>
+                <h1 class="flex">Our teasers</h1>
+    
+                <section id="teaser">
+                    <div class="flex">
+                    <img src="{{ asset('img/teaser_1.png') }}" alt="teaser-img">
+                    <img src="{{ asset('img/teaser_2.png') }}" alt="teaser-img">
+                    <img src="{{ asset('img/teaser_3.png') }}" alt="teaser-img">
+                    </div>
+                </section>
 
-            </div>
+                <h1 class="flex">Some videos</h1>
+
+                <section id="video">
+                    <div class="flex videodiv">
+                        <video src="vid/teaser.mp4" controls class="video" id="teaser"></video>
+                        <video src="vid/ivid.mp4" controls class="video" id="video"></video>
+                        <video src="vid/trail.mp4" controls class="video" id="trailer"></video>
+                    </div>
+                </section>
+
+            
         </div>
     </div>
 </div>
+</div>
+</div>
+
+
 @endsection

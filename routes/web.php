@@ -15,7 +15,8 @@ Route::get('/', function () {
   return view('welcome');
 });
 
-// pizza routes
+//! Site routes
+
 Route::middleware(['auth', 'is_admin'])->group(function (){
     Route::get('/rooms', 'App\Http\Controllers\PizzaController@index')->name('Book.index')->middleware('auth');
 });
@@ -30,7 +31,20 @@ Auth::routes(
   //'pizzas' => false]
 );
 
+//! Home / Role
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/check/role',[App\Http\Controllers\UserController::class,'checkRole'])->middleware('roleType');
-Route::get('/contact', 'App\Http\Controllers\ContactController@show');
-Route::post('/contact', 'App\Http\Controllers\ContactController@mailContactForm');
+
+//! Contact
+// Route::get('/contact', 'App\Http\Controllers\ContactController@show');
+// Route::post('/contact', 'App\Http\Controllers\ContactController@mailContactForm');
+
+// Route::get('/contact', 'HomeController@index')->name('contact');
+// Route::post('/contact', 'HomeController@send_mail')->name('addContact');
+
+// Route::get('/contact', 'App\Http\Controllers\ContactController@index')->name('contact');
+// Route::post('/contact', 'App\Http\Controllers\ContactController@send_mail')->name('addContact');
+
+Route::get('/contact', [App\Http\Controllers\ContactUsFormController::class, 'createForm']);
+Route::post('/contact', [App\Http\Controllers\ContactUsFormController::class, 'ContactUsForm'])->name('contact.store');

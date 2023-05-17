@@ -26,6 +26,8 @@
         <div class="links">
             <a href="{{ route('Book.about')}}">About</a>
             <a href="https://github.com/SpacePando/heaven">GitHub</a>
+            <a href="***">Instagram</a>
+            <a href="/contact">Contact Us</a>
         </div>
     </div>
 </div>
