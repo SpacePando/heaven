@@ -67,7 +67,7 @@
                 <p>A wondering opent zijn deuren op 1/01/2030 en dan opent De Heavenly Suites zijn deuren ook. We kijken er naat uit om te zien wat er allemaal zal gebeuren.
                 </p>
 
-                <h1 class="flex">Our teasers</h1>
+                <h1 class="flex h1">Our teasers</h1>
     
                 <section id="teaser">
                     <div class="flex">
@@ -77,7 +77,7 @@
                     </div>
                 </section>
 
-                <h1 class="flex">Some videos</h1>
+                <h1 class="flex h1">Some videos</h1>
 
                 <section id="video">
                     <div class="flex videodiv">
