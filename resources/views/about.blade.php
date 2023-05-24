@@ -13,43 +13,7 @@
     </div>
     
     </br>
-    <h2 style="text-align:center">Our Team</h2>
     <div class="row flex">
-        <div class="column">
-            <div class="card">
-                <img src="{{ asset('img/logoICN.png') }}" alt="mats" style="width:100%">
-                <div class="container">
-                    <h2>Sooi van haudt</h2>
-                    <p class="title">CEO & Founder</p>
-                    <p>i like tutel</p>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="card">
-                <img src="{{ asset('img/logoICN.png') }}" alt="Mats" style="width:100%">
-                <div class="container">
-                    <h2>Mats Praiss</h2>
-                    <p class="title">Residend Dwarf</p>
-                    <p>Dwarf</p>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="card">
-                <img src="{{ asset('img/logoICN.png') }}" alt="Mats" style="width:100%">
-                <div class="container">
-                    <h2>Noah Verstraeten</h2>
-                    <p class="title">Computer NERD</p>
-                    <p>Computer</p>
-                </div>
-            </div>
-        </div>
-        <!-- <section class="logoparallax">
-            <img src="{{ asset('img/logoICN.png') }}" alt="cloud" id="logoparallax1">
-            <img src="{{ asset('img/logoICN.png') }}" alt="cloud" id="logoparallax2">
-            <img src="{{ asset('img/logoICN.png') }}" alt="cloud" id="logoparallax3">
-        </section> -->
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="texttitle">
@@ -67,20 +31,10 @@
                 <p>A wondering opent zijn deuren op 1/01/2030 en dan opent De Heavenly Suites zijn deuren ook. We kijken er naat uit om te zien wat er allemaal zal gebeuren.
                 </p>
 
-                <h1 class="flex h1">Our teasers</h1>
-    
-                <section id="teaser">
-                    <div class="flex">
-                    <img src="{{ asset('img/teaser_1.png') }}" alt="teaser-img">
-                    <img src="{{ asset('img/teaser_2.png') }}" alt="teaser-img">
-                    <img src="{{ asset('img/teaser_3.png') }}" alt="teaser-img">
-                    </div>
-                </section>
-
                 <h1 class="flex h1">Some videos</h1>
 
                 <section id="video">
-                    <div class="flex videodiv">
+                    <div class="flex ">
                         <video src="vid/teaser.mp4" controls class="video" id="teaser"></video>
                         <video src="vid/ivid.mp4" controls class="video" id="video"></video>
                         <video src="vid/trail.mp4" controls class="video" id="trailer"></video>
@@ -88,9 +42,49 @@
                     </div>
                 </section>
 
-            
+                <h1 class="flex h1">Our teasers</h1>
+    
+                <section id="teaser">
+                    <div class="flex">
+                    <img src="{{ asset('img/teaser_1.png') }}" alt="teaser-img">    
+                    <img src="{{ asset('img/teaser_2.png') }}" alt="teaser-img">
+                    <img src="{{ asset('img/teaser_3.png') }}" alt="teaser-img">
+                    </div>
+                </section>    
+            </div>            
         </div>
-    </div>
+        <h2 style="text-align:center">Our Team</h2>
+        </br>
+            <div class="column">
+                <div class="card">
+                    <img src="{{ asset('img/logoICN.png') }}" alt="mats" style="width:100%">
+                    <div class="container">
+                        <h2>Sooi van haudt</h2>
+                        <p class="title">CEO & Founder</p>
+                        <p>i like tutel</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="{{ asset('img/logoICN.png') }}" alt="Mats" style="width:100%">
+                    <div class="container">
+                        <h2>Mats Praiss</h2>
+                        <p class="title">Residend Dwarf</p>
+                        <p>Dwarf</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="{{ asset('img/logoICN.png') }}" alt="Mats" style="width:100%">
+                    <div class="container">
+                        <h2>Noah Verstraeten</h2>
+                        <p class="title">Computer NERD</p>
+                        <p>Computer</p>
+                    </div>
+                </div>
+            </div>  
 </div>
 </div>
 </div>
